@@ -20,24 +20,24 @@ body {
 
 header {
     background-image: url("rkovacs.jpg");
-    background-size: cover;
-    background-position: center center;
+    background-size: cover; 
+    background-position: center center; /*me centro la imagen del dron de fondo sino me quedaba muy arriba*/
     color: rgba(255, 242, 58, 0.844);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height: calc(100vh - 102px);
+    min-height: calc(100vh - 102px); /*me permite que el view quede bien centrado y no muy arriba*/
 }
 
 .content {
     font-size: 2rem;
     margin: auto;
-    max-width: 100%;
+    max-width: 100%; 
 }
 
 .content h1 {
-    color: #fafa00d9;
-    margin-bottom: 0;
+    color: #fafa00d9;  /*aca va el YOUR SERVICE REPAIR*/
+    margin-bottom: 0; 
 }
 
 nav {
@@ -87,7 +87,7 @@ footer ul {
     padding: 0;
 }
 
-footer strong {
+footer strong {  /*el grosor de la fuente*/
     color: rgb(248 241 9);
 }
 
@@ -95,7 +95,7 @@ footer p {
     margin: 0;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) { /*importante para la resolución cuando achivo, a parti de los 700px adquiero las especificaciones colocadas entre {}*/
     .content {
         font-size: 1.4rem;
         margin: 2rem auto 0;
@@ -115,12 +115,12 @@ footer p {
     }
 
     footer ul {
-        flex-direction: column;
+        flex-direction: column;  /*cuando se achicaba no se me centraba por eso puse eso:*/
         justify-content: center;
     }
 
     footer li {
         margin: 1rem;
-        text-align: center;
+        text-align: center;  /*centramos el texto del footer y disminuimos el font size a 1rem*/
     }
 }
